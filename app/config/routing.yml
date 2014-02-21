@@ -1,3 +1,7 @@
+mevia_ged:
+    resource: "@MeviaGedBundle/Resources/config/routing.yml"
+    prefix:   /ged
+
 acme_ged:
     resource: "@AcmeGedBundle/Resources/config/routing.yml"
     prefix:   /

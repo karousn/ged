@@ -1,0 +1,3 @@
+mevia_ged_homepage:
+    pattern: /
+    defaults: { _controller: MeviaGedBundle:Default:index }

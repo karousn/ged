@@ -1,0 +1,4 @@
+acme_ged:
+    resource: "@AcmeGedBundle/Resources/config/routing.yml"
+    prefix:   /
+

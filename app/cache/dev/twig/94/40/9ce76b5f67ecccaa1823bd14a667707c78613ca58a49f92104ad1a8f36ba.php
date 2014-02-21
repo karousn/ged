@@ -72,6 +72,7 @@ class __TwigTemplate_94409ce76b5f67ecccaa1823bd14a667707c78613ca58a49f92104ad1a8
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
+
 </nav>";
     }
 
@@ -87,6 +88,6 @@ class __TwigTemplate_94409ce76b5f67ecccaa1823bd14a667707c78613ca58a49f92104ad1a8
 
     public function getDebugInfo()
     {
-        return array (  41 => 18,  37 => 17,  19 => 1,);
+        return array (  41 => 18,  37 => 17,  19 => 1,  90 => 16,  85 => 15,  79 => 14,  74 => 10,  69 => 6,  62 => 18,  59 => 17,  57 => 16,  55 => 15,  53 => 14,  46 => 11,  44 => 10,  40 => 9,  31 => 6,  24 => 1,  35 => 7,  29 => 2,);
     }
 }

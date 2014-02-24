@@ -1,14 +1,27 @@
-{% extends '::base.html.twig' %}
-{% block title %}Bienvenue{% endblock %}
+{% extends '::front.html.twig' %}
 {% block body %}
+    <div data-role="page" id="pageone">
+        <div data-role="main" class="ui-content">
+            <div style="text-align:center"><img src="{{ asset('images/franprix.png') }}"><br></div>
+            <form method="post" action="{{ path('mevia_ged_login') }}">
+                <fieldset data-role="collapsible" data-collapsed="false">
+                    <legend>Connectez-vous pour accéder au Ged Franprix</legend>
+                    <label>Demo : email : toto, mot de passe : toto</label><br>
+                    <div class="ui-field-contain">
+                        <input type="email" name="email" id="email" placeholder="Email...">
+                        <input type="password" name="password" id="password" placeholder="Mot de passe...">
+                        <label for="keepsession">Garder ma session ouverte</label>
+                        <input type="checkbox" name="keepsession" id="keepsession" value="keepsession" checked="true">
+                    </div>
+                    <input type="submit" data-inline="true" value="Connexion"><br>
+                    <a href="#">Mot de passe oublié?</a>
+                </fieldset>
+            </form>
+        </div>
 
-<h1>Liste des documents</h1>
-<table>
-    <tr><th>#</th><th>Document</th><th>Date de création</th><th>Date de modification</th></tr>
-{% for doc in docs %}
-    <tr><td><input type="checkbox" name="docs" value="{{ doc.id }}"></td><td><a href="{{ doc.path }}">{{ doc.name }}</a></td><td>{{ doc.createdAt|date("d/m/Y") }}</td><td>{{ doc.updatedAt|date("d/m/Y") }}</td></tr>
-{% else %}
-    <p>Aucun document n'a été trouvé.</p>
-{% endfor %}
-</table>
+
+        <div data-role="footer" data-position="fixed" data-fullscreen="true">
+            <h1>Ged Franprix 2014 - Edité par <a target="_blank" href="http://www.mevia.fr">Mevia</a></h1>
+        </div>
+    </div>
 {% endblock %}

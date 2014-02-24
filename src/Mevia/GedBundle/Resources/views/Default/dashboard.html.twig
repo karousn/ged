@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+{% block title %}Bienvenue{% endblock %}
+{% block body %}
+
+<h1>Liste des documents</h1>
+<table>
+    <tr><th>#</th><th>Document</th><th>Date de création</th><th>Date de modification</th></tr>
+{% for doc in docs %}
+    <tr><td><input type="checkbox" name="docs" value="{{ doc.id }}"></td><td><a href="{{ doc.path }}">{{ doc.name }}</a></td><td>{{ doc.createdAt|date("d/m/Y") }}</td><td>{{ doc.updatedAt|date("d/m/Y") }}</td></tr>
+{% else %}
+    <p>Aucun document n'a été trouvé.</p>
+{% endfor %}
+</table>
+{% endblock %}

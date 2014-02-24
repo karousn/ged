@@ -36,13 +36,14 @@
                 <button type="submit" class="btn btn-default">Envoyer</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="{{ path('acme_ged_homepage') }}"><i class="fa fa-gear"></i>  Administration</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sofiane <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Mon compte</a></li>
                         <li><a href="#">Paramètres</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Déconnexion</a></li>
+                        <li><a href="{{ path('mevia_ged_logout') }}">Déconnexion</a></li>
                     </ul>
                 </li>
             </ul>

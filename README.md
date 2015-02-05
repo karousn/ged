@@ -1,4 +1,1 @@
-ged
-===
-
-ged
+*GED Exemple*
